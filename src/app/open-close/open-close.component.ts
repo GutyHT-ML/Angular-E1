@@ -11,7 +11,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     state('open', style({
       height: '200px',
       opacity: 1,
-      backgroundColor: '#AAEE'
+      backgroundColor: '#abdee1'
     })),
     state('closed', style({
       height: '100px',
