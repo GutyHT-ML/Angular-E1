@@ -10,13 +10,13 @@ import { FormArray } from '@angular/forms';
 })
 export class ProfileEditorComponent {
   profileForm = this.fb.group({
-    firstName: ['', Validators.required],
-    lastName: [''],
-    address: this.fb.group({
-      street: [''],
-      city: [''],
-      state: [''],
-      zip: ['']
+    nombre: ['', Validators.required],
+    apellido: [''],
+    direccion: this.fb.group({
+      calle: [''],
+      ciudad: [''],
+      estado: [''],
+      CP: ['']
     }),
     aliases: this.fb.array([
       this.fb.control('')
@@ -32,9 +32,9 @@ export class ProfileEditorComponent {
 
   updateProfile() {
     this.profileForm.patchValue({
-      firstName: 'Nancy',
-      address: {
-        street: '123 Drew Street'
+      nombre: 'Selena',
+      direccion: {
+        calle: '123 Drew Street'
       }
     });
   }
